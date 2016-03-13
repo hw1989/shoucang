@@ -17,3 +17,9 @@ http://www.embed-net.com/thread-145-1-1.html
 
 
 http://shumeipai.nxez.com/2013/08/28/raspberry-pie-os-kernel-compilation.html?variant=zh-cn
+------
+http://www.cocoachina.com/ios/20140519/8471.html
+http://zhangmingwei.iteye.com/blog/2208783
+http://www.tuicool.com/articles/IzINZnQ
+http://www.tuicool.com/articles/IVnQN3z
+http://www.tuicool.com/articles/IVnQN3z
