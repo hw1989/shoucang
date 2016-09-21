@@ -10,7 +10,7 @@ commonchar=['+','-','*','/','<','>','?','=']
 uncommonchar=['~','`','!','@','#','$','%','^','&','(',')','|','[',']','{','}',';',':','',',','.']
 
 #allchar=[number,smallchar,bigchar,commonchar,uncommonchar]
-
+pswlength=6
 #对密码组合拼接
 def creatList(* strList):
     s=[]
@@ -25,7 +25,14 @@ def createPsw(leng,chars,strpsw):
     global maxSize
     global filename
     global strCode
+    global pswlength
     for s in chars:
+        #首字母判定
+        if (leng==pswlength) and (s in ['e','i','o','r','u','v']):
+            continue
+        #第二个字母判定
+        if  (leng==(pswlength-1)) and (s in ['c','d','f','h','k','p','q','w','x','z']):
+            continue
         if leng>1:
             createPsw(leng-1,chars,strpsw+s)
         else:
@@ -41,7 +48,7 @@ def createPsw(leng,chars,strpsw):
                     fopen.write(strCode)
                 strCode=''
 arr=creatList(number,smallchar)
-createPsw(6,arr,'')
+createPsw(pswlength,arr,'')
 
        
 
